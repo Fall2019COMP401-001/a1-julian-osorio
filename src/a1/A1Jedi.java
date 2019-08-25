@@ -31,12 +31,17 @@ public class A1Jedi {
 
             // Obtains customer's item purchases.
             int itemsPurchased = scan.nextInt();
+			List<String> customerItems = new ArrayList<>();
             for (int j = 0; j < itemsPurchased; j++) {
+
                 int itemQuantityPurchased = scan.nextInt();
                 String itemName = scan.next();
 
                 // Update item data.
-                items.get(itemName)[0]++;
+				if(!customerItems.contains(itemName)) {
+					items.get(itemName)[0]++;
+					customerItems.add(itemName);
+				}
                 items.get(itemName)[1] += itemQuantityPurchased;
             }
         }
