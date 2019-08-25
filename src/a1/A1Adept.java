@@ -50,11 +50,11 @@ public class A1Adept {
             // Evaluate if there is a new biggest or smallest value.
             if (totalCost > biggest) {
                 biggest = totalCost;
-                biggestOutput = "Biggest: " + firstName + ' ' + lastName + '(' + String.format("%.2f", totalCost) + ')';
+                biggestOutput = "Biggest: " + firstName + ' ' + lastName + " (" + String.format("%.2f", totalCost) + ')';
             }
             if (totalCost < smallest) {
                 smallest = totalCost;
-                smallestOutput = "Smallest: " + firstName + ' ' + lastName + '(' + String.format("%.2f", totalCost) + ')';
+                smallestOutput = "Smallest: " + firstName + ' ' + lastName + " (" + String.format("%.2f", totalCost) + ')';
             }
         }
 
